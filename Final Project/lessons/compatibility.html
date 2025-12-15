@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Compatibility 101 | Build Your PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lesson.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="../home.html">Build <span>Your PC</span></a>
+
+        <div class="nav-links">
+          <a class="nav-btn" href="../home.html">Home</a>
+          <a class="nav-btn active" href="#">Lesson</a>
+          <a class="nav-build" href="../contact.html">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="lesson-hero">
+      <div class="lesson-hero-text">
+        <span class="lesson-eyebrow">Beginner Lesson</span>
+        <h1>Compatibility 101</h1>
+        <p>The “will these parts work together?” tips.</p>
+      </div>
+    </header>
+
+    <!-- ================= CONTENT ================= -->
+    <main class="lesson-page">
+      <div class="lesson-layout lesson-layout--grid">
+        <article class="lesson-main">
+          <p class="lesson-intro">Research twice, buy once.</p>
+
+          <!-- Golden rule card -->
+          <section class="part-card full">
+            <div class="part-head">
+              <div>
+                <h2>Compatibility at a Glance</h2>
+                <div class="part-sub">Quick reference table</div>
+              </div>
+              <span class="part-pill">Summary</span>
+            </div>
+
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Must Match With</th>
+                  <th>Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CPU</td>
+                  <td>Motherboard Socket</td>
+                  <td>Physical and electrical compatibility</td>
+                </tr>
+                <tr>
+                  <td>RAM</td>
+                  <td>DDR4 / DDR5</td>
+                  <td>Wrong generation will not fit</td>
+                </tr>
+                <tr>
+                  <td>Storage</td>
+                  <td>SATA / NVMe Slot</td>
+                  <td>Board must support the drive type</td>
+                </tr>
+                <tr>
+                  <td>GPU</td>
+                  <td>Case Clearance + PCIe Slot</td>
+                  <td>Large cards may not physically fit</td>
+                </tr>
+                <tr>
+                  <td>PSU</td>
+                  <td>Total System Wattage</td>
+                  <td>Insufficient power causes instability</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Rule 1: CPU ↔ Motherboard -->
+          <section class="part-card" id="cpu-mobo">
+            <div class="part-head">
+              <div>
+                <h2>1) CPU ↔ Motherboard</h2>
+                <div class="part-sub">Socket + chipset support</div>
+              </div>
+              <span class="part-pill">“The big one”</span>
+            </div>
+
+            <p>
+              Your CPU must match the motherboard’s <strong>socket</strong>. If
+              the socket doesn’t match, it won’t fit. Even with a matching
+              socket, some boards need a <strong>BIOS update</strong> to support
+              newer CPU generations.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Pick a CPU, then choose a board
+              that explicitly supports it.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">CPU socket</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Common gotcha</div>
+                <div class="spec-value">BIOS support</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">check CPU support list</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 2: RAM ↔ Motherboard -->
+          <section class="part-card" id="ram-mobo">
+            <div class="part-head">
+              <div>
+                <h2>2) RAM ↔ Motherboard</h2>
+                <div class="part-sub">DDR type + slots</div>
+              </div>
+              <span class="part-pill">“Fits or doesn’t”</span>
+            </div>
+
+            <p>
+              RAM must match the board’s RAM type (example:
+              <strong>DDR4 vs DDR5</strong>). The wrong type won’t even
+              physically fit. Capacity and speed matter too, but type is the
+              hard compatibility rule.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> DDR4 and DDR5 are not
+              interchangeable, they should match the board.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">DDR4 or DDR5</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Common gotcha</div>
+                <div class="spec-value">mixing different kits</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">buy a 2-stick kit</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 3: Storage ↔ Motherboard -->
+          <section class="part-card" id="storage-mobo">
+            <div class="part-head">
+              <div>
+                <h2>3) Storage ↔ Motherboard</h2>
+                <div class="part-sub">SATA vs M.2 (NVMe)</div>
+              </div>
+              <span class="part-pill">“Slot rules”</span>
+            </div>
+
+            <p>
+              Storage compatibility is mostly interface. SATA drives use cables.
+              M.2 drives use motherboard slots. Some M.2 slots support
+              <strong>NVMe</strong>, some support <strong>SATA</strong>, and
+              some support both. Your motherboard’s specs tell you which is
+              which.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Make sure your board has the
+              right slot for the drive you’re buying.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">SATA vs NVMe</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Common gotcha</div>
+                <div class="spec-value">M.2 slot limitations</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">start with 1 NVMe SSD</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 4: GPU ↔ Case + Motherboard -->
+          <section class="part-card" id="gpu-fit">
+            <div class="part-head">
+              <div>
+                <h2>4) GPU ↔ Fit + Slot</h2>
+                <div class="part-sub">Case clearance + PCIe slot</div>
+              </div>
+              <span class="part-pill">“Physical check”</span>
+            </div>
+
+            <p>
+              Most GPUs work in the main PCIe slot on modern boards. The real
+              compatibility problems are physical: GPU length, thickness, and
+              whether it blocks other slots or cables in tight cases.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Going small needs extra care +
+              measuring.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">case GPU clearance</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Also check</div>
+                <div class="spec-value">PCIe slot position</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">measure before buying</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 5: PSU ↔ GPU + Motherboard -->
+          <section class="part-card" id="psu-cables">
+            <div class="part-head">
+              <div>
+                <h2>5) PSU ↔ Power Cables</h2>
+                <div class="part-sub">Wattage + connectors</div>
+              </div>
+              <span class="part-pill">“Stability”</span>
+            </div>
+
+            <p>
+              PSU compatibility is about having the right cables for your
+              motherboard and GPU, plus enough wattage. The motherboard needs
+              the 24-pin and CPU power. GPUs may need one or more PCIe power
+              connectors.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Don’t buy “more watts” only.
+              Make sure your wattage matches your GPU + CPU needs.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">GPU power connectors</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Common gotcha</div>
+                <div class="spec-value">missing PCIe cables</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">leave upgrade headroom</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 6: Case ↔ Motherboard + Cooling -->
+          <section class="part-card" id="case-size">
+            <div class="part-head">
+              <div>
+                <h2>6) Case ↔ Size</h2>
+                <div class="part-sub">Motherboard + cooler fit</div>
+              </div>
+              <span class="part-pill">“Does it fit?”</span>
+            </div>
+
+            <p>
+              Cases support certain motherboard sizes (ATX, mATX, ITX). They
+              also limit GPU length and CPU cooler height. A case can be
+              “compatible” in theory but still feel cramped if it’s too small.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Match case size to motherboard,
+              then verify GPU + cooler clearance.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">ATX/mATX/ITX support</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Also check</div>
+                <div class="spec-value">cooler + GPU clearance</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">airflow > looks</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 7: Cooling ↔ CPU + Case -->
+          <section class="part-card" id="cooling-fit">
+            <div class="part-head">
+              <div>
+                <h2>7) Cooling ↔ Mounting</h2>
+                <div class="part-sub">Socket bracket + clearance</div>
+              </div>
+              <span class="part-pill">“Mount fit”</span>
+            </div>
+
+            <p>
+              Your CPU cooler must support your CPU socket (mounting bracket).
+              It also has to physically fit in the case. Big air coolers can hit
+              RAM or side panels. Liquid coolers need radiator support.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Socket support + case clearance
+              are the two checks.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">socket mounting bracket</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Also check</div>
+                <div class="spec-value">case clearance / radiator</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">air cooling is enough</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 8: OS + Drivers -->
+          <section class="part-card" id="os-drivers">
+            <div class="part-head">
+              <div>
+                <h2>8) OS + Drivers</h2>
+                <div class="part-sub">Software compatibility</div>
+              </div>
+              <span class="part-pill">“Support”</span>
+            </div>
+
+            <p>
+              Most hardware works on modern Windows with minimal effort. Linux
+              is great too, but some games need software workarounds and
+              specialty tools may need extra setup.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Pick the OS based on the apps
+              and games you actually use.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">your software needs</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Common gotcha</div>
+                <div class="spec-value">GPU drivers (Nvidia = Simple)</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">Windows is simplest</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Rule 9: Peripherals + Ports -->
+          <section class="part-card" id="ports">
+            <div class="part-head">
+              <div>
+                <h2>9) Ports + Peripherals</h2>
+                <div class="part-sub">Monitor, USB, audio</div>
+              </div>
+              <span class="part-pill">“I/O”</span>
+            </div>
+
+            <p>
+              Compatibility here is simple: do you have the ports you need? Make
+              sure your monitor connections match your GPU outputs, and that you
+              have enough USB ports for your devices.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> A strong PC can feel bad if the
+              monitor doesn’t match it.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Must match</div>
+                <div class="spec-value">monitor ↔ GPU output</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Also check</div>
+                <div class="spec-value">USB ports, audio needs</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">prioritize the monitor</div>
+              </div>
+            </div>
+          </section>
+
+          <div class="lesson-footer">
+            <a class="back-link" href="../home.html#beginner"
+              >← Back to lessons</a
+            >
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>© 2025 Build Your PC • Matt Metcalfe</p>
+    </footer>
+  </body>
+</html>

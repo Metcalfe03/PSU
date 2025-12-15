@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1c1f1e, #85877c);
+  color: white;
+  overflow: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+body.loaded .hero {
+  opacity: 1;
+}
+
+.subtitle {
+  color: #6ad5cb;
+  font-size: 1.15rem;
+  margin-bottom: 34px;
+  opacity: 0.9;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  padding: 22px 48px;
+  border-radius: 999px;
+  background: #2de1c2;
+  color: #0b0f0e;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+
+  transition: opacity 0.4s ease, transform 0.4s ease, background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+body.loaded .cta {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.cta:hover {
+  background: #6ad5cb;
+  box-shadow: 0 12px 30px rgba(45, 225, 194, 0.35);
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #0f1413;
+  z-index: 9999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-box {
+  width: min(560px, 90vw);
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.title-wrap {
+  position: relative;
+  display: inline-block;
+  line-height: 1.05;
+  font-weight: 800;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+
+.title-base {
+  color: white;
+}
+
+.title-fill {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 0%;
+  color: #2de1c2;
+  transition: height 0.08s linear;
+}
+
+.title-wrap span {
+  color: inherit;
+}
+
+.loader-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0%;
+  background: #2de1c2;
+  transition: width 0.08s linear;
+}

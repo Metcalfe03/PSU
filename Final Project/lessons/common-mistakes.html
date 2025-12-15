@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Common Mistakes | Build Your PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lesson.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="../home.html">Build <span>Your PC</span></a>
+
+        <div class="nav-links">
+          <a class="nav-btn" href="../home.html">Home</a>
+          <a class="nav-btn active" href="#">Lesson</a>
+          <a class="nav-build" href="../contact.html">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header class="lesson-hero">
+      <div class="lesson-hero-text">
+        <span class="lesson-eyebrow">Beginner Lesson</span>
+        <h1>Common Mistakes</h1>
+        <p>The stuff almost everyone does once, and the easy fixes.</p>
+      </div>
+    </header>
+
+    <!-- ================= CONTENT ================= -->
+    <main class="lesson-page">
+      <div class="lesson-layout">
+        <article class="lesson-main">
+          <p class="lesson-intro">
+            Building a PC is mostly simple steps, but a few small mistakes can
+            make things confusing.
+          </p>
+
+          <!-- DISPLAY CABLE -->
+          <section class="part-card" id="display-cable">
+            <div class="part-head">
+              <div>
+                <h2>Plugging the Monitor Into the Motherboard</h2>
+                <div class="part-sub">No display signal</div>
+              </div>
+              <span class="part-pill">“Classic”</span>
+            </div>
+
+            <p>
+              If you have a dedicated GPU, your monitor usually needs to be
+              plugged into the <strong>GPU</strong>, not the motherboard. If
+              it’s plugged into the motherboard, you can get a black screen even
+              though the PC is “on.”
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Dedicated GPU build? Plug the
+              monitor into the GPU outputs.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">PC on, no display</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">move cable to GPU</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">try HDMI/DP on GPU</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- RAM SEATING -->
+          <section class="part-card" id="ram-seating">
+            <div class="part-head">
+              <div>
+                <h2>RAM Not Fully Seated</h2>
+                <div class="part-sub">The “almost clicked” problem</div>
+              </div>
+              <span class="part-pill">“Pressure”</span>
+            </div>
+
+            <p>
+              RAM takes more force than people expect. If one side isn’t fully
+              clicked into place, you may get no boot, boot loops, or weird
+              stability issues.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> If it won’t boot, reseat the RAM
+              first.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">no boot / boot loop</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">push until it clicks</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">use slots A2/B2</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CPU POWER -->
+          <section class="part-card" id="cpu-power">
+            <div class="part-head">
+              <div>
+                <h2>Forgetting the CPU Power Cable</h2>
+                <div class="part-sub">24-pin isn’t enough</div>
+              </div>
+              <span class="part-pill">“Hidden”</span>
+            </div>
+
+            <p>
+              Most motherboards need the big 24-pin cable <em>and</em> a CPU
+              power cable (usually 8-pin) near the top of the board. Missing the
+              CPU power cable is a very common first build mistake.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> 24-pin + CPU 8-pin are both
+              required.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">fans spin, no boot</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">plug CPU 8-pin in</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">don’t mix PSU cables</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- GPU POWER -->
+          <section class="part-card" id="gpu-power">
+            <div class="part-head">
+              <div>
+                <h2>GPU Power Cables Not Connected</h2>
+                <div class="part-sub">GPU needs extra power</div>
+              </div>
+              <span class="part-pill">“Easy miss”</span>
+            </div>
+
+            <p>
+              Many GPUs require dedicated power connectors from the PSU. If
+              those cables aren’t plugged in, you may get no display, warning
+              lights, or a system that won’t fully boot.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> If your GPU has power ports,
+              they need cables.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">no display / GPU warning light</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">plug in PCIe power</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">fully seat connectors</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FRONT PANEL -->
+          <section class="part-card" id="front-panel">
+            <div class="part-head">
+              <div>
+                <h2>Front Panel Wires on the Wrong Pins</h2>
+                <div class="part-sub">Power button doesn’t work</div>
+              </div>
+              <span class="part-pill">“Tiny pins”</span>
+            </div>
+
+            <p>
+              The case power button wires connect to small pins on the
+              motherboard. If they’re on the wrong pins, the system won’t turn
+              on from the button, even if everything else is fine.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Use the motherboard manual
+              diagram for front panel pins.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">nothing happens on press</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">recheck front panel pins</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">good lighting helps</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- COOLER / FAN HEADER -->
+          <section class="part-card" id="cpu-fan">
+            <div class="part-head">
+              <div>
+                <h2>CPU Fan Not Plugged Into CPU_FAN</h2>
+                <div class="part-sub">Boot warnings / shutdowns</div>
+              </div>
+              <span class="part-pill">“Safety check”</span>
+            </div>
+
+            <p>
+              Many motherboards expect something plugged into the header labeled
+              <strong>CPU_FAN</strong>. If it’s empty, the motherboard may warn
+              you or shut down to protect the CPU.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> CPU cooler fan cable goes to
+              CPU_FAN.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">CPU fan error</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">move cable to CPU_FAN</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">Don’t panic! It’s common</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- STANDOFFS -->
+          <section class="part-card" id="standoffs">
+            <div class="part-head">
+              <div>
+                <h2>Wrong Motherboard Standoffs</h2>
+                <div class="part-sub">Shorts + weird behavior</div>
+              </div>
+              <span class="part-pill">“Risky”</span>
+            </div>
+
+            <p>
+              Motherboards should sit on standoffs, not directly against the
+              case. Extra standoffs in the wrong spots can also cause problems.
+              This is rare, but worth checking, especially if your case is
+              larger than your motherboard (mATX motherboard & ATX case).
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Standoffs should match the holes
+              in your board. No extras unless intended.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">random issues, no boot</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">check standoff positions</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">use manual for board size</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FIRST BOOT PATIENCE -->
+          <section class="part-card" id="first-boot-time">
+            <div class="part-head">
+              <div>
+                <h2>Not Waiting on First Boot</h2>
+                <div class="part-sub">Memory training can take time</div>
+              </div>
+              <span class="part-pill">“Patience”</span>
+            </div>
+
+            <p>
+              Some systems take a bit on the first boot (especially with newer
+              RAM). Fans may spin, the screen may stay black for a moment, then
+              it suddenly appears.
+            </p>
+
+            <div class="part-callout">
+              <strong>Simple takeaway:</strong> Give the first boot a minute
+              before changing things.
+            </div>
+
+            <div class="part-specs">
+              <div class="spec">
+                <div class="spec-label">Symptom</div>
+                <div class="spec-value">black screen at first</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Fix</div>
+                <div class="spec-value">wait 60 to 90 seconds</div>
+              </div>
+              <div class="spec">
+                <div class="spec-label">Beginner tip</div>
+                <div class="spec-value">watch debug LEDs</div>
+              </div>
+            </div>
+          </section>
+
+          <div class="lesson-footer">
+            <a class="back-link" href="../home.html#beginner">
+              ← Back to lessons
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>© 2025 Build Your PC • Matt Metcalfe</p>
+    </footer>
+  </body>
+</html>
